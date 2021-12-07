@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<script>
+		function reveal() {
+			var reveals = document.querySelectorAll(".reveal");
+		
+			for (var i = 0; i < reveals.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+		
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("active");
+				}
+			}
+		}
+		
+		window.addEventListener("scroll", reveal);
+	</script>
+	<title>TellSell</title>
+</head>
+
+<body>
+	<header>
+		<div class="header_title">
+			<h1>Workshop HTML + CSS</h1>
+		</div>
+		<div class="header_subtitle">
+			<h2>De beste workshop die je kan kopen voor veel geld!</h2>
+		</div>
+		<div class="header_price">
+			<p>Nu voor een kopje koffie!</p>
+		</div>
+	</header>
+
+	<section class="section_summary">
+		<div class="summary">
+			<div class="summary_content">
+				<p>De meest succesvolle workshop om HTML en CSS te leren! Dankzij deze door experts ontworpen workshop kan jij binnen <span>no-time</span> leren hoe je een website maakt en hoe deze er visueel aantrekkelijk uit ziet!</p>
+				<p>Des te meer tijd heb je om vervolgens alle kennis te gebruiken om je huisdieren een welverdiende website te geven! De wereld heeft meer foto's nodig van jouw schattige pluizenbol!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_rating">
+		<div class="rating">
+			<h3>The New York Times raadt deze workshop ten zeerste aan, en geeft het 7 van 5 sterren!</h3>
+		</div>
+	</section>
+
+	<section class="section_price">
+		<div class="price_price">
+			<p>
+				Van <span class="old_price"><strike>€2084,-</strike></span></p>
+				<p>voor <span class="old_price"><strike>€1084,-</strike></span>!
+			</p>
+			<p class="price_sale">Sinterklaasspecial, nu voor een kopje koffie!*</p>
+		</div>
+		<div class="price_cta">
+			<a href="#">Koop nu!</a>
+		</div>
+		<div class="price_disclaimer">
+			<p>* Retourneren niet mogelijk, voorwaarden zijn van toepassing.</p>
+		</div>
+	</section>
+
+	<section class="section_pricing">
+		<div class="pricing_table">
+			<div class="pricing_basic">
+				<h3>Basic</h3>
+				<div class="pricing_basic_content">
+					<div class="pricing_intro">
+						<p>De basis van de basis</p>
+					</div>
+					<div class="pricing_cta">
+						<a href="#">Koop nu</a>
+					</div>
+					<div class="pricing_price">
+						<p>Kop koffie</p>
+					</div>
+					<div class="pricing_summary">
+						<p>Alles wat je krijgt met Basic:</p>
+						<ul>
+							<li>de basis van HTML</li>
+							<li>de basis van CSS</li>
+							<li>DIY website bouwen</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pricing_premium">
+				<h3>Premium</h3>
+				<div class="pricing_premium_content">
+					<div class="pricing_intro">
+						<p>De basis van de basis, plus een beetje extra</p>
+						</div>
+					<div class="pricing_cta">
+						<a href="#">Koop nu</a>
+					</div>
+					<div class="pricing_price">
+						<p>Vijf koppen koffie</p>
+					</div>
+					<div class="pricing_summary">
+						<p>Alles van Basic, plus:</p>
+						<ul>
+							<li>Meer over HTML</li>
+							<li>Meer over CSS</li>
+							<li>2 DIY websites bouwen</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pricing_deluxe">
+				<div class="pricing_recommendation">
+					<p>Lilian recommends</p>
+				</div>
+				<h3>Deluxe</h3>
+				<div class="pricing_deluxe_content">
+					<div class="pricing_intro">
+						<p>De basis van de basis, plus de basis van de premium, uiteraard de beste prijs-kwaliteit-verhouding!</p>
+					</div>
+					<div class="pricing_cta">
+						<a href="#">Koop nu</a>
+					</div>
+					<div class="pricing_price">
+						<p>2084 euro</p>
+					</div>
+					<div class="pricing_summary">
+						<p>Alles van Premium, plus:</p>
+						<ul>
+							<li>Don't do this!</li>
+							<li>Please...</li>
+							<li>You'll regret your decision!</li>
+							<li>Don't say I did not warn you...</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_references">
+		<div class="references_title">
+			<p>Zij gingen je al voor:</p>
+		</div>
+		<div class="references_images">
+			<img src="/img/wordpress_logo.png" class="image_left reveal">
+			<img src="/img/codepen_logo.png" class="image_right reveal">
+			<img src="/img/w3schools_logo.png" class="image_left reveal" id="w3schools">
+			<img src="/img/mdnwebdocs_logo.png" class="image_right reveal">
+		</div>
+	</section>
+
+	<footer>
+		<p>Created by Lilian Kempees, 2021</p>
+	</footer>
+
+</body>
+
+</html>
